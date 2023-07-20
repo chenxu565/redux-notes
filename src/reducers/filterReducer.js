@@ -1,4 +1,6 @@
 const filterReducer = (state = 'ALL', action) => {
+  console.log('FR state now: ', state)
+  console.log('FR action', action)
   switch (action.type) {
     case 'SET_FILTER':
       return action.payload
